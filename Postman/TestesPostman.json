@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "db3dcda7-b024-467b-8344-9f7e3d08d556",
+		"name": "Testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27042249"
+	},
+	"item": [
+		{
+			"name": "GET Com Sucesso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Com Sucesso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"username\": \"johndoe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"address\": {\r\n    \"street\": \"Main Street\",\r\n    \"suite\": \"Apt. 101\",\r\n    \"city\": \"Anytown\",\r\n    \"zipcode\": \"12345\",\r\n    \"geo\": {\r\n      \"lat\": \"-37.3159\",\r\n      \"lng\": \"81.1496\"\r\n    }\r\n  },\r\n  \"phone\": \"555-555-5555\",\r\n  \"website\": \"johndoe.org\",\r\n  \"company\": {\r\n    \"name\": \"Doe Industries\",\r\n    \"catchPhrase\": \"Innovate and Inspire\",\r\n    \"bs\": \"drive impactful growth\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Error 500",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"username\": \"johndoe\",\r\n  \"email\": ,\r\n  \"address\": {\r\n    \"street\": \"Main Street\",\r\n    \"suite\": \"Apt. 101\",\r\n    \"city\": \"Anytown\",\r\n    \"zipcode\": \"12345\",\r\n    \"geo\": {\r\n      \"lat\": \"-37.3159\",\r\n      \"lng\": \"81.1496\"\r\n    }\r\n  },\r\n  \"phone\": \"555-555-5555\",\r\n  \"website\": \"johndoe.org\",\r\n  \"company\": {\r\n    \"name\": \"Doe Industries\",\r\n    \"catchPhrase\": \"Innovate and Inspire\",\r\n    \"bs\": \"drive impactful growth\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Error 400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"username\": \"johndoe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  },\r\n  \"phone\": \"555-555-5555\",\r\n  \"website\": \"johndoe.org\",\r\n  \"company\": {\r\n    \"name\": \"Doe Industries\",\r\n    \"catchPhrase\": \"Innovate and Inspire\",\r\n    \"bs\": \"drive impactful growth\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
